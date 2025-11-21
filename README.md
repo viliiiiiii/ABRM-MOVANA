@@ -10,6 +10,6 @@ Minimal page-based scaffold for the ABRM Management suite. The project uses plai
 
 ## Getting started
 1. Adjust credentials in `config/config.php` for your database and MinIO endpoint.
-2. Create required tables (`users`, `permissions`, `role_permissions`, `notifications`, etc.).
+2. Import the bootstrap schema from `config/schema.sql` to create all tables and seed a default `owner@example.com / password` app_owner account.
 3. Point your web server to `public/` as the document root.
-4. Access `/public/login` to sign in and explore the stubbed modules.
+4. Access `/public/login` to sign in and explore the modules using the seeded owner account, then create roles and users as needed.
