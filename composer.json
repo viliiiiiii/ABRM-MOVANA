@@ -1,0 +1,17 @@
+{
+    "name": "abrm/management",
+    "description": "Plain PHP page-based ABRM Management app with MinIO, PDF, and Excel support.",
+    "type": "project",
+    "require": {
+        "php": ">=8.0",
+        "dompdf/dompdf": "^2.0",
+        "phpoffice/phpspreadsheet": "^2.1",
+        "aws/aws-sdk-php": "^3.320",
+        "endroid/qr-code": "^4.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "": ["core/", "public/"]
+        }
+    }
+}
